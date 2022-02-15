@@ -1,6 +1,7 @@
 
 type t = {a: int; b: int};;
-
+let num (x: t) : int = x.a;;
+let den (x: t) : int = x.b;;
 
 let rec simplify (x: t) : t = 
   let g = FormalInt.gcd x.a x.b in
@@ -16,7 +17,7 @@ let sub (x: t) (y: t): t =
   simplify {a = x.a*y.b - x.b*y.a; b = x.b*y.b};;
 
 let mul (x: t) (y: t): t = 
-  simplify {a = x.a * y.a; b = y.b * y.b};;
+  simplify {a = x.a * y.a; b = x.b * y.b};;
 
 let inv (x: t) : t = 
   simplify {a = x.b ; b = x.a};;
