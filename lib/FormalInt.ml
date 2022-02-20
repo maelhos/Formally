@@ -1,16 +1,11 @@
 
 type t = int;;
 
-let simplify (x: t) : t = x;;
+let add (x: t) (y: t): t = x+y;;
 
-let add (x: t) (y: t): t = 
-  simplify (x+y);;
+let sub (x: t) (y: t): t = x-y;;
 
-let sub (x: t) (y: t): t = 
-  simplify (x-y);;
-
-let mul (x: t) (y: t): t = 
-  simplify (x*y);;
+let mul (x: t) (y: t): t = x*y;;
 
 let sign (x: t) : FormalSign.t = 
   match x with 
