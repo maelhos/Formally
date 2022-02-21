@@ -1,2 +1,3 @@
 (library
- (name Formally))
+ (name Formally)
+ (libraries FormalNumber))

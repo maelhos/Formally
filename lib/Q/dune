@@ -1,0 +1,3 @@
+(library
+ (name FormalQ)
+ (libraries FormalZ FormalNumberInternals))

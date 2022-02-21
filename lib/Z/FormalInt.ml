@@ -1,11 +1,18 @@
 
 type t = int;;
 
-let add (x: t) (y: t): t = x+y;;
+let add (x: t) (y: t) : t = x+y;;
+ 
+let sub (x: t) (y: t) : t = x-y;;
+ 
+let mul (x: t) (y: t) : t = x*y;;
 
-let sub (x: t) (y: t): t = x-y;;
-
-let mul (x: t) (y: t): t = x*y;;
+exception NoNegativePowerForIntegers;;
+let pow (x: t) (y: t) : t = 
+  let rec aux (x: t) (y: t) : t =
+    if y = 0 then 1 else (if y land 1 = 0 then aux (x*x) (y/2) else x * aux (x*x) ((y-1)/2))
+  in
+  if y < 0 then raise NoNegativePowerForIntegers else aux x y ;;
 
 let sign (x: t) : FormalSign.t = 
   match x with 
