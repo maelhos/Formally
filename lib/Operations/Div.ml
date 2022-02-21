@@ -1,5 +1,6 @@
-open FormalNumber
-open Simplify
+open FormalNumber.FormalNum
+open FormalNumber.Simplify
+open FormalQ
 
 let div (x: formalNumber) (y: formalNumber) : formalNumber = 
   match x, y with

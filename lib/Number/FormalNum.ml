@@ -1,3 +1,5 @@
+open FormalZ
+open FormalQ
 
 type formalNumber = 
   | Fint of FormalInt.t

@@ -1,4 +1,5 @@
-open FormalNumber
+open FormalQ
+open FormalNum
 
 let rec simplify (x: formalNumber) : formalNumber =
   match x with

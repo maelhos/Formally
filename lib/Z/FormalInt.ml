@@ -1,3 +1,4 @@
+open FormalNumberInternals
 
 type t = int;;
 

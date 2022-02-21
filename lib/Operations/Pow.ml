@@ -1,5 +1,6 @@
-open FormalNumber
-open Simplify
+open FormalNumber.FormalNum
+open FormalNumber.Simplify
+open FormalQ
 
 let pow (x: formalNumber) (y: formalNumber) : formalNumber = (* work in progress ... *)
   match x, y with

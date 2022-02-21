@@ -1,5 +1,7 @@
-open FormalNumber
-open Simplify
+open FormalNumber.FormalNum
+open FormalNumber.Simplify
+open FormalZ
+open FormalQ
 
 let mul (x: formalNumber) (y: formalNumber) : formalNumber = 
   match x, y with

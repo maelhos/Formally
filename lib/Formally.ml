@@ -1,4 +1,5 @@
-open FormalNumber
+open FormalNumber.FormalNum
+open FormalOperators
 
 let formalType (f: formalNumber) : string = 
   match f with

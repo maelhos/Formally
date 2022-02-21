@@ -1,3 +1,5 @@
+open FormalNumberInternals
+open FormalZ
 
 type t = {a: int; b: int};;
 let num (x: t) : int = x.a;;
