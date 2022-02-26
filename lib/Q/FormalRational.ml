@@ -27,6 +27,9 @@ let inv (x: t) : t =
 let div (x: t) (y: t): t = 
   simplify (mul x (inv y));;
 
+let powInt (x: t) (y: FormalInt.t) : t =
+  simplify {a = (FormalInt.pow (x.a) y); b = (FormalInt.pow (x.b) y)};;
+
 let sign (x: t) : FormalSign.t = 
   FormalSign.mul (FormalInt.sign x.a) (FormalInt.sign x.b);;
   
