@@ -2,5 +2,6 @@ open FormalZ
 open FormalQ
 
 type formalNumber = 
-  | Fint of FormalInt.t
-  | Frat of FormalRational.t;;
+  | IFint of FormalInt.t
+  | IFrat of FormalRational.t;;
+
